@@ -21,18 +21,18 @@
       "is_enable": true,
       "is_live": false,
       "is_premium": false,
-      "thumb_url": "https://picsum.photos/id/101/200/300",
-      "url": "https://picsum.photos/id/101/1080/1920",
-      "4k_url": ""
+      "thumb_url": "https://admin.windymob.com/uploads/55_newcool_thumnail_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_bc6560bb70.webp",
+      "url": "https://admin.windymob.com/uploads/55_newcool_thumnail_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_bc6560bb70.webp",
+      "4k_url": "https://admin.windymob.com/uploads/55_newcool_4k_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_68bb9e0f6e.webp"
     },
     {
       "id": 2,
       "name": "Wallpaper 2",
       "is_enable": true,
-      "is_live": false,
+      "is_live": true,
       "is_premium": false,
-      "thumb_url": "https://picsum.photos/id/102/200/300",
-      "url": "https://picsum.photos/id/102/1080/1920",
+      "thumb_url": "https://content.windymob.com/smile_wallpapers/wallpaper_0/thumbnail_1_27.png",
+      "url": "https://content.windymob.com/smile_wallpapers/wallpaper_0/1_27.mp4",
       "4k_url": ""
     },
     {
