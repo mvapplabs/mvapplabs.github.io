@@ -1,1 +1,1938 @@
-Beauty Cam
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff4f9a" />
+
+  <title>Sweet Camera: Beauty Makeup</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --pink: #ff4f9a;
+      --pink-light: #ffb6d8;
+      --purple: #8b5cf6;
+      --purple-dark: #6d28d9;
+      --peach: #ff9f8e;
+      --yellow: #ffd76a;
+      --text: #29182c;
+      --muted: #796b7b;
+      --white: #ffffff;
+      --bg: #fff8fc;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       GLOBAL
+    ========================= */
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    .section-title {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+
+    .section-title .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .section-title h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      margin-top: 18px;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--pink);
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "✦";
+      font-size: 11px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(
+        90deg,
+        #ff3f91,
+        #b45cff,
+        #ff806d
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* =========================
+       DECORATIONS
+    ========================= */
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(1px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .blob-1 {
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 79, 154, .18);
+      top: 80px;
+      left: -130px;
+    }
+
+    .blob-2 {
+      width: 400px;
+      height: 400px;
+      background: rgba(139, 92, 246, .13);
+      right: -180px;
+      top: 250px;
+    }
+
+    .sparkle {
+      position: absolute;
+      color: #ff72ac;
+      animation: float 4s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    .sparkle.s1 {
+      top: 18%;
+      left: 8%;
+      font-size: 30px;
+    }
+
+    .sparkle.s2 {
+      top: 30%;
+      right: 10%;
+      font-size: 22px;
+      animation-delay: 1s;
+    }
+
+    .sparkle.s3 {
+      bottom: 15%;
+      left: 13%;
+      font-size: 18px;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0);
+      }
+      50% {
+        transform: translateY(-14px) rotate(12deg);
+      }
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      padding: 25px 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 19px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: white;
+      font-size: 21px;
+      background: linear-gradient(135deg, #ff4f9a, #a855f7);
+      box-shadow: 0 10px 25px rgba(255, 79, 154, .25);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #665769;
+    }
+
+    .nav-links a {
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--pink);
+    }
+
+    .nav-button {
+      padding: 12px 21px;
+      border-radius: 100px;
+      color: white !important;
+      background: var(--text);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 850px;
+      padding-top: 150px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 180, 220, .35), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(178, 130, 255, .22), transparent 32%),
+        linear-gradient(135deg, #fff8fc, #fff1f7 50%, #f8f1ff);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      align-items: center;
+      gap: 70px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-content {
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 15px;
+      border: 1px solid rgba(255, 79, 154, .2);
+      background: rgba(255,255,255,.65);
+      backdrop-filter: blur(15px);
+      border-radius: 100px;
+      color: var(--pink);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(58px, 7vw, 92px);
+      line-height: .95;
+      letter-spacing: -4px;
+      max-width: 800px;
+    }
+
+    .hero-description {
+      max-width: 590px;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 16px 25px;
+      border-radius: 100px;
+      font-weight: 700;
+      transition: .3s;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      color: white;
+      background: linear-gradient(135deg, #ff3f91, #a855f7);
+      box-shadow: 0 15px 35px rgba(255, 79, 154, .28);
+    }
+
+    .button-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(255, 79, 154, .35);
+    }
+
+    .button-secondary {
+      background: white;
+      border: 1px solid #eadde7;
+    }
+
+    .button-secondary:hover {
+      transform: translateY(-3px);
+      border-color: #ff9dc5;
+    }
+
+    /* Phone */
+
+    .hero-visual {
+      position: relative;
+      min-height: 590px;
+      display: grid;
+      place-items: center;
+    }
+
+    .phone-glow {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 79, 154, .25),
+        rgba(168, 85, 247, .22)
+      );
+      filter: blur(10px);
+    }
+
+    .phone {
+      width: 290px;
+      height: 585px;
+      padding: 9px;
+      border-radius: 43px;
+      position: relative;
+      z-index: 2;
+      background: #1c1620;
+      box-shadow:
+        0 40px 80px rgba(72, 30, 65, .22),
+        inset 0 0 0 1px rgba(255,255,255,.15);
+      transform: rotate(4deg);
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 35px;
+      position: relative;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.08),
+          rgba(255,255,255,.0)
+        ),
+        linear-gradient(160deg, #ffb6d8, #b98aff 60%, #ff8caa);
+    }
+
+    .phone-screen::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 30%, rgba(255,255,255,.65), transparent 23%),
+        radial-gradient(circle at 20% 80%, rgba(255,220,240,.6), transparent 30%);
+    }
+
+    .phone-face {
+      position: absolute;
+      width: 155px;
+      height: 205px;
+      background: linear-gradient(135deg, #ffd5c4, #efaa9d);
+      border-radius: 50% 50% 46% 46%;
+      left: 50%;
+      top: 115px;
+      transform: translateX(-50%);
+      box-shadow: 0 25px 50px rgba(95, 30, 60, .2);
+    }
+
+    .phone-hair {
+      position: absolute;
+      width: 190px;
+      height: 230px;
+      left: 50%;
+      top: 92px;
+      transform: translateX(-50%);
+      background: #382534;
+      border-radius: 50% 50% 38% 38%;
+      z-index: -1;
+    }
+
+    .eye {
+      position: absolute;
+      width: 15px;
+      height: 8px;
+      border-radius: 50%;
+      border-bottom: 3px solid #472a38;
+      top: 88px;
+    }
+
+    .eye.left {
+      left: 37px;
+    }
+
+    .eye.right {
+      right: 37px;
+    }
+
+    .lips {
+      position: absolute;
+      width: 33px;
+      height: 16px;
+      border-radius: 50%;
+      background: #dc477d;
+      left: 50%;
+      bottom: 45px;
+      transform: translateX(-50%);
+    }
+
+    .phone-ui {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 125px;
+      padding: 20px;
+      background: linear-gradient(
+        transparent,
+        rgba(40, 20, 35, .72)
+      );
+      color: white;
+    }
+
+    .phone-tools {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    .phone-tool {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .phone-tool span:first-child {
+      font-size: 21px;
+    }
+
+    .floating-card {
+      position: absolute;
+      z-index: 4;
+      background: rgba(255,255,255,.9);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,.8);
+      box-shadow: 0 20px 50px rgba(85, 30, 70, .13);
+      border-radius: 20px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .floating-card .icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      font-size: 20px;
+      background: #fff0f7;
+    }
+
+    .card-1 {
+      top: 115px;
+      left: 10px;
+      transform: rotate(-7deg);
+    }
+
+    .card-2 {
+      bottom: 120px;
+      right: 0;
+      transform: rotate(6deg);
+    }
+
+    /* =========================
+       MARQUEE
+    ========================= */
+
+    .marquee {
+      overflow: hidden;
+      padding: 20px 0;
+      background: #241927;
+      color: white;
+      transform: rotate(-1deg) scale(1.03);
+      position: relative;
+      z-index: 4;
+    }
+
+    .marquee-inner {
+      display: flex;
+      width: max-content;
+      animation: marquee 25s linear infinite;
+    }
+
+    .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      padding: 0 35px;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .marquee-item span {
+      color: #ff78b5;
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* =========================
+       FEATURE CARDS
+    ========================= */
+
+    .features {
+      background: white;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature-card {
+      padding: 35px;
+      min-height: 280px;
+      border-radius: 28px;
+      position: relative;
+      overflow: hidden;
+      transition: .35s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-card:nth-child(1) {
+      background: linear-gradient(145deg, #fff0f7, #ffe1ef);
+    }
+
+    .feature-card:nth-child(2) {
+      background: linear-gradient(145deg, #f2ebff, #e4d5ff);
+    }
+
+    .feature-card:nth-child(3) {
+      background: linear-gradient(145deg, #fff7df, #ffecc2);
+    }
+
+    .feature-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: rgba(255,255,255,.8);
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .feature-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      color: #725e70;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .feature-decoration {
+      position: absolute;
+      right: -30px;
+      bottom: -40px;
+      font-size: 130px;
+      opacity: .12;
+    }
+
+    /* =========================
+       MAKEUP
+    ========================= */
+
+    .makeup-section {
+      background:
+        radial-gradient(circle at 0 50%, rgba(255, 121, 177, .12), transparent 30%),
+        #fff8fc;
+    }
+
+    .makeup-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .beauty-card {
+      min-height: 570px;
+      border-radius: 40px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg, #ffc6db, #d9bbff);
+      box-shadow: 0 35px 80px rgba(112, 48, 100, .15);
+    }
+
+    .beauty-card::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255,255,255,.35);
+    }
+
+    .beauty-face {
+      position: absolute;
+      width: 220px;
+      height: 300px;
+      left: 50%;
+      top: 110px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: linear-gradient(145deg, #ffd8c7, #eaa798);
+      box-shadow: 0 25px 50px rgba(98, 43, 55, .18);
+    }
+
+    .beauty-hair {
+      position: absolute;
+      width: 270px;
+      height: 350px;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50% 50% 35% 35%;
+      background: #33232f;
+      z-index: -1;
+    }
+
+    .beauty-eye {
+      position: absolute;
+      width: 27px;
+      height: 14px;
+      top: 130px;
+      border-bottom: 4px solid #38222e;
+      border-radius: 50%;
+    }
+
+    .beauty-eye.left {
+      left: 58px;
+    }
+
+    .beauty-eye.right {
+      right: 58px;
+    }
+
+    .beauty-lips {
+      position: absolute;
+      width: 48px;
+      height: 26px;
+      bottom: 68px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background: #d83c77;
+    }
+
+    .makeup-pills {
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .makeup-pill {
+      padding: 10px 15px;
+      background: rgba(255,255,255,.8);
+      backdrop-filter: blur(15px);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .makeup-copy h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 5vw, 65px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+    }
+
+    .makeup-copy > p {
+      margin: 22px 0 35px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .tool-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 17px;
+      background: white;
+      border-radius: 18px;
+      border: 1px solid #f2e7ef;
+      transition: .25s;
+    }
+
+    .tool-item:hover {
+      transform: translateX(5px);
+      border-color: #ffc0da;
+    }
+
+    .tool-item .tool-icon {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: #fff0f6;
+      font-size: 20px;
+    }
+
+    .tool-item strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    .tool-item small {
+      color: #9a8797;
+      font-size: 11px;
+    }
+
+    /* =========================
+       BODY
+    ========================= */
+
+    .body-section {
+      background: #241927;
+      color: white;
+      overflow: hidden;
+    }
+
+    .body-section .section-title p {
+      color: #bbaeba;
+    }
+
+    .body-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .body-copy h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(45px, 6vw, 72px);
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+
+    .body-copy p {
+      color: #c7b8c5;
+      line-height: 1.8;
+      margin: 24px 0 35px;
+      max-width: 520px;
+    }
+
+    .body-tools {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .body-tool {
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .body-tool span {
+      font-size: 25px;
+    }
+
+    .body-tool strong {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .body-tool small {
+      display: block;
+      color: #a997a6;
+      margin-top: 5px;
+      font-size: 11px;
+    }
+
+    .body-art {
+      min-height: 500px;
+      border-radius: 40px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(255, 144, 196, .5), transparent 35%),
+        linear-gradient(145deg, #5c3268, #2b1a35);
+    }
+
+    .body-silhouette {
+      position: absolute;
+      width: 160px;
+      height: 380px;
+      left: 50%;
+      top: 80px;
+      transform: translateX(-50%);
+      background: linear-gradient(180deg, #ffcabd, #e99b99);
+      border-radius: 80px 80px 50px 50px;
+      filter: drop-shadow(0 30px 35px rgba(0,0,0,.25));
+    }
+
+    .body-silhouette::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -50px;
+      left: 30px;
+      border-radius: 50%;
+      background: #f0aea1;
+    }
+
+    .body-ring {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* =========================
+       AI SECTION
+    ========================= */
+
+    .ai-section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle at 20% 20%, #f4dfff, transparent 30%),
+        radial-gradient(circle at 80% 80%, #ffd8ea, transparent 30%),
+        #fff;
+    }
+
+    .ai-box {
+      border-radius: 45px;
+      padding: 80px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #7c3aed, #ec4899 55%, #ff8b75);
+      color: white;
+      box-shadow: 0 35px 90px rgba(124, 58, 237, .25);
+    }
+
+    .ai-box::before {
+      content: "";
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      right: -150px;
+      top: -250px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.2);
+      box-shadow:
+        0 0 0 50px rgba(255,255,255,.03),
+        0 0 0 100px rgba(255,255,255,.03),
+        0 0 0 150px rgba(255,255,255,.03);
+    }
+
+    .ai-box-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+    }
+
+    .ai-box .eyebrow {
+      color: white;
+    }
+
+    .ai-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(45px, 6vw, 76px);
+      line-height: 1;
+      margin: 18px 0;
+      letter-spacing: -2px;
+    }
+
+    .ai-box p {
+      color: rgba(255,255,255,.85);
+      line-height: 1.8;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .ai-tags {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .ai-tag {
+      padding: 10px 15px;
+      border-radius: 100px;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(10px);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* =========================
+       EDITING TOOLS
+    ========================= */
+
+    .editing {
+      background: #fff8fc;
+    }
+
+    .editing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .edit-card {
+      padding: 28px 22px;
+      min-height: 190px;
+      border-radius: 25px;
+      background: white;
+      border: 1px solid #f3e6ee;
+      transition: .3s;
+    }
+
+    .edit-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(100, 35, 80, .08);
+    }
+
+    .edit-icon {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .edit-card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .edit-card p {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       WHY
+    ========================= */
+
+    .why {
+      background: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 35px;
+      border-radius: 28px;
+      background: #fff9fc;
+      border: 1px solid #f4e7ef;
+    }
+
+    .why-number {
+      font-family: "Playfair Display", serif;
+      font-size: 50px;
+      background: linear-gradient(135deg, #ff4f9a, #8b5cf6);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .why-card h3 {
+      margin: 15px 0 10px;
+      font-size: 19px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 80%, rgba(255, 116, 176, .3), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(149, 100, 255, .25), transparent 30%),
+        #fff1f8;
+    }
+
+    .cta-inner {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1;
+      letter-spacing: -3px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 22px auto 32px;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-button {
+      min-width: 180px;
+      padding: 15px 22px;
+      border-radius: 15px;
+      background: #241927;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      transition: .3s;
+    }
+
+    .store-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 30px rgba(36,25,39,.2);
+    }
+
+    .store-button .store-icon {
+      font-size: 27px;
+    }
+
+    .store-button small {
+      display: block;
+      font-size: 9px;
+      color: #bcaeba;
+    }
+
+    .store-button strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 30px 0;
+      background: #241927;
+      color: #aa9ca9;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      color: white;
+      font-weight: 800;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 950px) {
+      .hero-grid,
+      .makeup-grid,
+      .body-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 130px;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 620px;
+      }
+
+      .makeup-grid {
+        gap: 50px;
+      }
+
+      .makeup-copy {
+        text-align: center;
+      }
+
+      .body-copy {
+        text-align: center;
+      }
+
+      .body-copy p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .body-tools {
+        text-align: left;
+      }
+
+      .feature-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .editing-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .ai-box {
+        padding: 55px 35px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-button {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-bottom: 80px;
+      }
+
+      .hero h1 {
+        font-size: 57px;
+        letter-spacing: -3px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .hero-visual {
+        transform: scale(.85);
+        margin: -40px 0;
+      }
+
+      .phone {
+        width: 260px;
+        height: 525px;
+      }
+
+      .floating-card {
+        transform: scale(.85);
+      }
+
+      .card-1 {
+        left: -5px;
+      }
+
+      .card-2 {
+        right: -5px;
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .section-title {
+        margin-bottom: 40px;
+      }
+
+      .tool-list,
+      .body-tools,
+      .editing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .beauty-card {
+        min-height: 500px;
+      }
+
+      .body-art {
+        min-height: 430px;
+      }
+
+      .ai-box {
+        padding: 45px 25px;
+        border-radius: 30px;
+      }
+
+      .cta h2 {
+        letter-spacing: -2px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">✦</div>
+        Sweet Camera
+      </a>
+
+      <div class="nav-links">
+        <a href="#makeup">Makeup</a>
+        <a href="#body">Body Editor</a>
+        <a href="#ai">AI Photos</a>
+        <a href="#tools">Tools</a>
+        <a href="#download" class="nav-button">Get the App</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div>
+
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          ✨ Your beauty, your style
+        </div>
+
+        <h1>
+          Your <span class="gradient-text">Sweetest</span>
+          Selfie Starts Here.
+        </h1>
+
+        <p class="hero-description">
+          Transform every selfie into your best one with makeup,
+          beauty filters, body editing and magical AI photo effects —
+          all in one beautiful app.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#download" class="button button-primary">
+            ✨ Discover Sweet Camera
+          </a>
+
+          <a href="#makeup" class="button button-secondary">
+            Explore Features →
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="phone-glow"></div>
+
+        <div class="floating-card card-1">
+          <div class="icon">💄</div>
+          <div>Beauty Makeup<br><small>Instant glow</small></div>
+        </div>
+
+        <div class="floating-card card-2">
+          <div class="icon">✨</div>
+          <div>AI Portrait<br><small>Magic transformation</small></div>
+        </div>
+
+        <div class="phone">
+          <div class="phone-screen">
+
+            <div class="phone-hair"></div>
+
+            <div class="phone-face">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+              <div class="lips"></div>
+            </div>
+
+            <div class="phone-ui">
+              <div style="font-size:13px;font-weight:700;">
+                Sweet Camera ✨
+              </div>
+
+              <div class="phone-tools">
+                <div class="phone-tool">
+                  <span>💄</span>
+                  Makeup
+                </div>
+
+                <div class="phone-tool">
+                  <span>✨</span>
+                  Beauty
+                </div>
+
+                <div class="phone-tool">
+                  <span>🤖</span>
+                  AI
+                </div>
+
+                <div class="phone-tool">
+                  <span>🎀</span>
+                  Stickers
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-inner">
+
+      <div class="marquee-item">
+        <span>✦</span> BEAUTY MAKEUP
+        <span>✦</span> AI PORTRAITS
+        <span>✦</span> BODY EDITOR
+        <span>✦</span> SELFIE FILTERS
+        <span>✦</span> CREATIVE PHOTOS
+      </div>
+
+      <div class="marquee-item">
+        <span>✦</span> BEAUTY MAKEUP
+        <span>✦</span> AI PORTRAITS
+        <span>✦</span> BODY EDITOR
+        <span>✦</span> SELFIE FILTERS
+        <span>✦</span> CREATIVE PHOTOS
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CORE FEATURES -->
+  <section class="section features">
+
+    <div class="container">
+
+      <div class="section-title">
+        <div class="eyebrow">Everything in one app</div>
+
+        <h2>
+          Beauty meets
+          <span class="gradient-text">creativity.</span>
+        </h2>
+
+        <p>
+          From natural beauty enhancement to creative AI transformations,
+          Sweet Camera gives you simple tools to make every photo feel special.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">💄</div>
+
+          <h3>Beauty Makeup</h3>
+
+          <p>
+            Smooth skin, enhance lips, add blush, change eye colors
+            and create your perfect makeup look in seconds.
+          </p>
+
+          <div class="feature-decoration">💋</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💃</div>
+
+          <h3>Body Editor</h3>
+
+          <p>
+            Shape your photos naturally with intuitive tools for
+            waist, legs, shoulders, neck, bust and hips.
+          </p>
+
+          <div class="feature-decoration">✨</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+
+          <h3>AI Photo Magic</h3>
+
+          <p>
+            Transform ordinary photos into creative AI portraits,
+            fantasy looks, traditional outfits and artistic styles.
+          </p>
+
+          <div class="feature-decoration">🌈</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAKEUP -->
+  <section class="section makeup-section" id="makeup">
+
+    <div class="container makeup-grid">
+
+      <div class="beauty-card">
+
+        <div class="beauty-hair"></div>
+
+        <div class="beauty-face">
+          <div class="beauty-eye left"></div>
+          <div class="beauty-eye right"></div>
+          <div class="beauty-lips"></div>
+        </div>
+
+        <div class="makeup-pills">
+          <div class="makeup-pill">✨ Smooth Skin</div>
+          <div class="makeup-pill">💋 Lips</div>
+          <div class="makeup-pill">🌸 Blush</div>
+          <div class="makeup-pill">👁 Contact Lens</div>
+        </div>
+
+      </div>
+
+      <div class="makeup-copy">
+
+        <div class="eyebrow">Beauty Makeup</div>
+
+        <h2>
+          Glow up in
+          <span class="gradient-text">just a tap.</span>
+        </h2>
+
+        <p>
+          Enhance your natural beauty with realistic makeup effects
+          designed to look beautiful without looking artificial.
+        </p>
+
+        <div class="tool-list">
+
+          <div class="tool-item">
+            <div class="tool-icon">✨</div>
+            <div>
+              <strong>Smooth Skin</strong>
+              <small>Natural radiant complexion</small>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">💋</div>
+            <div>
+              <strong>Lips</strong>
+              <small>Glossy & matte colors</small>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🌸</div>
+            <div>
+              <strong>Blush</strong>
+              <small>Fresh rosy cheeks</small>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">👁</div>
+            <div>
+              <strong>Contact Lens</strong>
+              <small>Realistic eye colors</small>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">🖌</div>
+            <div>
+              <strong>Eyebrows</strong>
+              <small>Perfectly balanced styles</small>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">💎</div>
+            <div>
+              <strong>Beauty Filters</strong>
+              <small>Trendy photo effects</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="section body-section" id="body">
+
+    <div class="container">
+
+      <div class="section-title">
+        <div class="eyebrow">Body Editor</div>
+
+        <h2>
+          Shape it.
+          <span class="gradient-text">Style it.</span>
+        </h2>
+
+        <p>
+          Easy-to-use reshaping tools help you adjust your photos
+          naturally while keeping your edits beautiful and effortless.
+        </p>
+      </div>
+
+      <div class="body-content">
+
+        <div class="body-copy">
+
+          <h2>
+            Your photo.
+            <br>
+            Your <span class="gradient-text">style.</span>
+          </h2>
+
+          <p>
+            Fine-tune your silhouette with intuitive editing controls.
+            Make subtle adjustments or create your own creative style
+            with just a few touches.
+          </p>
+
+          <div class="body-tools">
+
+            <div class="body-tool">
+              <span>✨</span>
+              <strong>Body Reshape</strong>
+              <small>Natural body editing</small>
+            </div>
+
+            <div class="body-tool">
+              <span>🦵</span>
+              <strong>Legs & Waist</strong>
+              <small>Fine-tune proportions</small>
+            </div>
+
+            <div class="body-tool">
+              <span>💕</span>
+              <strong>Bust & Hips</strong>
+              <small>Adjust with ease</small>
+            </div>
+
+            <div class="body-tool">
+              <span>🧍</span>
+              <strong>Shoulders & Neck</strong>
+              <small>Balance your look</small>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="body-art">
+          <div class="body-ring"></div>
+          <div class="body-silhouette"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section class="ai-section" id="ai">
+
+    <div class="container">
+
+      <div class="ai-box">
+
+        <div class="ai-box-content">
+
+          <div class="eyebrow">
+            AI Image Generator
+          </div>
+
+          <h2>
+            One photo.
+            <br>
+            Endless possibilities.
+          </h2>
+
+          <p>
+            Turn your photos into amazing AI creations. Choose a style,
+            select a photo and let Sweet Camera transform it into a
+            beautiful new look in seconds.
+          </p>
+
+          <div class="ai-tags">
+            <div class="ai-tag">👗 Traditional Outfits</div>
+            <div class="ai-tag">✨ Elegant Portraits</div>
+            <div class="ai-tag">🧚 Fantasy Looks</div>
+            <div class="ai-tag">🎨 Artistic Styles</div>
+            <div class="ai-tag">🌈 Creative Photos</div>
+            <div class="ai-tag">🎭 Funny Characters</div>
+            <div class="ai-tag">🐰 Cartoon Styles</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDITING TOOLS -->
+  <section class="section editing" id="tools">
+
+    <div class="container">
+
+      <div class="section-title">
+        <div class="eyebrow">Creative Photo Editing</div>
+
+        <h2>
+          Little tools.
+          <span class="gradient-text">Big creativity.</span>
+        </h2>
+
+        <p>
+          Add the finishing touches and make every picture uniquely yours.
+        </p>
+      </div>
+
+      <div class="editing-grid">
+
+        <div class="edit-card">
+          <div class="edit-icon">📝</div>
+          <h3>Add Text</h3>
+          <p>
+            Stylish fonts, colorful text and creative typography.
+          </p>
+        </div>
+
+        <div class="edit-card">
+          <div class="edit-icon">🎀</div>
+          <h3>Cute Stickers</h3>
+          <p>
+            Personalize selfies and social media posts with fun stickers.
+          </p>
+        </div>
+
+        <div class="edit-card">
+          <div class="edit-icon">✨</div>
+          <h3>Beauty Filters</h3>
+          <p>
+            Selfie, makeup, vintage and trendy color filters.
+          </p>
+        </div>
+
+        <div class="edit-card">
+          <div class="edit-icon">✂️</div>
+          <h3>Crop & Resize</h3>
+          <p>
+            Perfect your photos for Instagram, TikTok and more.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why">
+
+    <div class="container">
+
+      <div class="section-title">
+        <div class="eyebrow">Why Sweet Camera</div>
+
+        <h2>
+          Everything you need to
+          <span class="gradient-text">shine.</span>
+        </h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-number">01</div>
+
+          <h3>Professional Beauty Tools</h3>
+
+          <p>
+            Powerful face and makeup editing tools made simple
+            enough for everyday selfies.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">02</div>
+
+          <h3>Creative AI Magic</h3>
+
+          <p>
+            Explore AI portraits, artistic transformations and
+            creative photo styles.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">03</div>
+
+          <h3>Fast & Easy</h3>
+
+          <p>
+            Beautiful results without complicated editing.
+            Pick a tool, make your edit and create.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="download">
+
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">✦</div>
+
+    <div class="container">
+
+      <div class="cta-inner">
+
+        <div class="eyebrow">Sweet Camera</div>
+
+        <h2>
+          Your perfect selfie
+          <span class="gradient-text">starts here.</span>
+        </h2>
+
+        <p>
+          Create stunning selfies, beautiful portraits and magical
+          AI photos with Sweet Camera: Beauty Makeup.
+        </p>
+
+        <div class="store-buttons">
+
+          <!-- Replace these href values with your real store URLs -->
+
+          <a href="#" class="store-button">
+            <div class="store-icon">▶</div>
+            <div>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+
+          <a href="#" class="store-button">
+            <div class="store-icon"></div>
+            <div>
+              <small>DOWNLOAD ON THE</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div class="footer-logo">
+        ✦ Sweet Camera
+      </div>
+
+      <div>
+        © 2026 Sweet Camera. All rights reserved.
+      </div>
+
+      <div>
+        Beauty • Makeup • AI
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
