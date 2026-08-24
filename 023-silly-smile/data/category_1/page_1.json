@@ -1,0 +1,119 @@
+{
+  "category": {
+    "id": 1,
+    "name": "Nature",
+    "is_enable": true,
+    "is_premium": false,
+    "thumb_url": "https://picsum.photos/id/101/200/300"
+  },
+  "pagination": {
+    "page": 1,
+    "page_size": 10,
+    "total_items": 10,
+    "total_pages": 1,
+    "has_next": true,
+    "has_previous": false
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "Wallpaper 1",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://admin.windymob.com/uploads/55_newcool_thumnail_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_bc6560bb70.webp",
+      "url": "https://admin.windymob.com/uploads/55_newcool_thumnail_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_bc6560bb70.webp",
+      "4k_url": "https://admin.windymob.com/uploads/55_newcool_4k_eric_mmo_a_character_wearing_the_hood_and_wielding_a_scythe_in_bd2e6e75_e1e4_4c26_bee1_8266dc49006c_68bb9e0f6e.webp"
+    },
+    {
+      "id": 2,
+      "name": "Wallpaper 2",
+      "is_enable": true,
+      "is_live": true,
+      "is_premium": false,
+      "thumb_url": "https://content.windymob.com/smile_wallpapers/wallpaper_0/thumbnail_1_27.png",
+      "url": "https://content.windymob.com/smile_wallpapers/wallpaper_0/1_27.mp4",
+      "4k_url": ""
+    },
+    {
+      "id": 3,
+      "name": "Wallpaper 3",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/103/200/300",
+      "url": "https://picsum.photos/id/103/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 4,
+      "name": "Wallpaper 4",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/104/200/300",
+      "url": "https://picsum.photos/id/104/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 5,
+      "name": "Wallpaper 5",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/105/200/300",
+      "url": "https://picsum.photos/id/105/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 6,
+      "name": "Wallpaper 6",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/106/200/300",
+      "url": "https://picsum.photos/id/106/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 7,
+      "name": "Wallpaper 7",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/107/200/300",
+      "url": "https://picsum.photos/id/107/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 8,
+      "name": "Wallpaper 8",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/108/200/300",
+      "url": "https://picsum.photos/id/108/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 9,
+      "name": "Wallpaper 9",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/109/200/300",
+      "url": "https://picsum.photos/id/109/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 10,
+      "name": "Wallpaper 10",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/110/200/300",
+      "url": "https://picsum.photos/id/110/1080/1920",
+      "4k_url": ""
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "🌲 Nature",
+      "is_enable": true,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/101/200/300",
+    },
+    {
+      "id": 2,
+      "name": "Minimal",
+      "is_enable": true,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/111/200/300",
+    },
+    {
+      "id": 3,
+      "name": "Abstract",
+      "is_enable": true,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/seed/wallpaper-2-1-81/200/300",
+    },
+    {
+      "id": 4,
+      "name": "City",
+      "is_enable": true,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/seed/wallpaper-2-11-91/200/300",
+    },
+    {
+      "id": 5,
+      "name": "Animals",
+      "is_enable": true,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/seed/wallpaper-2-21-101/200/300",
+    }
+  ]
+}

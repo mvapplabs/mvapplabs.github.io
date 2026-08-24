@@ -1,0 +1,124 @@
+{
+  "hobbies": [
+    {
+      "id": 1,
+      "is_enable": true,
+      "name": "🎨 Photography",
+      "thumb_url": "https://picsum.photos/id/101/200/300"
+    },
+    {
+      "id": 2,
+      "is_enable": true,
+      "name": "🎵 Music",
+      "thumb_url": "https://picsum.photos/id/102/200/300"
+    },
+    {
+      "id": 3,
+      "is_enable": true,
+      "name": "📖 Reading",
+      "thumb_url": "https://picsum.photos/id/103/200/300"
+    },
+    {
+      "id": 4,
+      "is_enable": true,
+      "name": "🎭 Theater",
+      "thumb_url": "https://picsum.photos/id/104/200/300"
+    },
+    {
+      "id": 5,
+      "is_enable": true,
+      "name": "⚽ Sports",
+      "thumb_url": "https://picsum.photos/id/105/200/300"
+    },
+    {
+      "id": 6,
+      "is_enable": true,
+      "name": "🍳 Cooking",
+      "thumb_url": "https://picsum.photos/id/106/200/300"
+    },
+    {
+      "id": 7,
+      "is_enable": true,
+      "name": "🏔️ Hiking",
+      "thumb_url": "https://picsum.photos/id/107/200/300"
+    },
+    {
+      "id": 8,
+      "is_enable": true,
+      "name": "✈️ Travel",
+      "thumb_url": "https://picsum.photos/id/108/200/300"
+    },
+    {
+      "id": 9,
+      "is_enable": true,
+      "name": "🎮 Gaming",
+      "thumb_url": "https://picsum.photos/id/109/200/300"
+    },
+    {
+      "id": 10,
+      "is_enable": true,
+      "name": "💻 Programming",
+      "thumb_url": "https://picsum.photos/id/110/200/300"
+    },
+    {
+      "id": 11,
+      "is_enable": true,
+      "name": "🎬 Film",
+      "thumb_url": "https://picsum.photos/id/111/200/300"
+    },
+    {
+      "id": 12,
+      "is_enable": true,
+      "name": "🧘 Yoga",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-1-121/200/300"
+    },
+    {
+      "id": 13,
+      "is_enable": true,
+      "name": "🖼️ Painting",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-2-131/200/300"
+    },
+    {
+      "id": 14,
+      "is_enable": false,
+      "name": "🎪 Dance",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-3-141/200/300"
+    },
+    {
+      "id": 15,
+      "is_enable": true,
+      "name": "🌱 Gardening",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-4-151/200/300"
+    },
+    {
+      "id": 16,
+      "is_enable": true,
+      "name": "📸 Drawing",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-5-161/200/300"
+    },
+    {
+      "id": 17,
+      "is_enable": true,
+      "name": "🚴 Cycling",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-6-171/200/300"
+    },
+    {
+      "id": 18,
+      "is_enable": true,
+      "name": "📚 Writing",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-7-181/200/300"
+    },
+    {
+      "id": 19,
+      "is_enable": false,
+      "name": "🎯 Archery",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-8-191/200/300"
+    },
+    {
+      "id": 20,
+      "is_enable": true,
+      "name": "🏊 Swimming",
+      "thumb_url": "https://picsum.photos/seed/hobby-1-9-201/200/300"
+    }
+  ]
+}

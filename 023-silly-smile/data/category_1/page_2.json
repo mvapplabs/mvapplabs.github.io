@@ -1,0 +1,119 @@
+{
+  "category": {
+    "id": 1,
+    "name": "Nature",
+    "is_enable": true,
+    "is_premium": false,
+    "thumb_url": "https://picsum.photos/id/101/200/300"
+  },
+  "pagination": {
+    "page": 2,
+    "page_size": 10,
+    "total_items": 50,
+    "total_pages": 5,
+    "has_next": true,
+    "has_previous": true
+  },
+  "items": [
+    {
+      "id": 11,
+      "name": "Wallpaper 11",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/101/200/300",
+      "url": "https://picsum.photos/id/101/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 12,
+      "name": "Wallpaper 12",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/102/200/300",
+      "url": "https://picsum.photos/id/102/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 13,
+      "name": "Wallpaper 13",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/103/200/300",
+      "url": "https://picsum.photos/id/103/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 14,
+      "name": "Wallpaper 14",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/104/200/300",
+      "url": "https://picsum.photos/id/104/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 15,
+      "name": "Wallpaper 15",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/105/200/300",
+      "url": "https://picsum.photos/id/105/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 16,
+      "name": "Wallpaper 16",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/106/200/300",
+      "url": "https://picsum.photos/id/106/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 17,
+      "name": "Wallpaper 17",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/107/200/300",
+      "url": "https://picsum.photos/id/107/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 18,
+      "name": "Wallpaper 18",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/108/200/300",
+      "url": "https://picsum.photos/id/108/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 19,
+      "name": "Wallpaper 19",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/109/200/300",
+      "url": "https://picsum.photos/id/109/1080/1920",
+      "4k_url": ""
+    },
+    {
+      "id": 20,
+      "name": "Wallpaper 20",
+      "is_enable": true,
+      "is_live": false,
+      "is_premium": false,
+      "thumb_url": "https://picsum.photos/id/110/200/300",
+      "url": "https://picsum.photos/id/110/1080/1920",
+      "4k_url": ""
+    }
+  ]
+}
