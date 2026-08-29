@@ -1,1 +1,648 @@
-Privacy
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5fa4">
+
+  <title>Emoji Battery Icon: Status Bar - Privacy Policy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      color: #29182c;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255, 182, 216, .35), transparent 28%),
+        radial-gradient(circle at 90% 10%, rgba(196, 168, 255, .25), transparent 30%),
+        #fff8fc;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    .policy {
+      position: relative;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .94);
+      border: 1px solid rgba(235, 220, 231, .8);
+      border-radius: 32px;
+      padding: 60px 70px;
+      box-shadow: 0 30px 80px rgba(80, 30, 70, .09);
+    }
+
+    .policy::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -140px;
+      top: -140px;
+      border-radius: 50%;
+      background: rgba(255, 79, 154, .09);
+    }
+
+    .policy::after {
+      content: "✦";
+      position: absolute;
+      right: 55px;
+      top: 45px;
+      color: #ff82b5;
+      font-size: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      color: #e84393;
+      background: #fff0f7;
+      border: 1px solid #ffd8e9;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 700px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      background: linear-gradient(
+        90deg,
+        #ff3f91,
+        #a855f7,
+        #ff806d
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin: 14px 0 45px;
+      color: #8a7889;
+      font-size: 14px;
+    }
+
+    .intro {
+      position: relative;
+      padding: 24px 26px;
+      margin-bottom: 40px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #fff3f8, #f8f1ff);
+      border: 1px solid #f3e4ef;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 42px 0 15px;
+      color: #2d2031;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -.5px;
+    }
+
+    h3 {
+      margin: 28px 0 10px;
+      color: #3b293e;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 17px;
+      color: #665869;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 10px 0 22px;
+      padding-left: 25px;
+      color: #665869;
+    }
+
+    li {
+      margin: 7px 0;
+      font-size: 15px;
+    }
+
+    li::marker {
+      color: #ed5599;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      padding: 13px 16px;
+      margin: 0;
+      border-radius: 14px;
+      background: #fff8fc;
+      border: 1px solid #f3e5ee;
+    }
+
+    .service-list li::before {
+      content: "✦";
+      color: #ed5599;
+      margin-right: 8px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      margin: 20px 0;
+      border-radius: 16px;
+      background: #fff7df;
+      border: 1px solid #f7e5ad;
+      color: #6d5a28;
+    }
+
+    .footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid #eee5ed;
+      color: #9b8c9d;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      color: #e84393;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0;
+      }
+
+      .policy {
+        padding: 35px 23px;
+        border-radius: 23px;
+      }
+
+      .policy::after {
+        right: 25px;
+        top: 30px;
+      }
+
+      h1 {
+        font-size: 40px;
+        padding-right: 25px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main class="page">
+
+
+<article class="policy">
+
+  <div class="brand">
+    ✦ Emoji Battery Icon
+  </div>
+
+  <h1>
+    Privacy Policy
+  </h1>
+
+  <p class="subtitle">
+    Emoji Battery Icon: Status Bar · Effective Date: August 29, 2026
+  </p>
+
+
+  <div class="intro">
+
+    <p>
+      Emoji Battery Icon: Status Bar is a phone personalization
+      application that allows users to customize their battery display,
+      battery widgets, status bar decorations, notch styles, screen pets,
+      charging effects, and other visual elements.
+    </p>
+
+    <p>
+      This Privacy Policy explains how information may be collected,
+      used, processed, and protected when you use the application.
+      By using the Service, you agree to the practices described
+      in this Privacy Policy.
+    </p>
+
+  </div>
+
+
+  <h2>Information Collection and Use</h2>
+
+  <p>
+    Emoji Battery Icon: Status Bar may collect or process certain
+    technical, usage, advertising, diagnostic, and purchase-related
+    information to provide, maintain, and improve the application.
+  </p>
+
+  <p>
+    The application does not require you to create an account in order
+    to use its core personalization features.
+  </p>
+
+  <p>
+    Depending on the features you use, the application may use
+    third-party services that collect technical, usage, advertising,
+    crash, or purchase-related information.
+  </p>
+
+  <p>
+    Third-party services used by the application may include:
+  </p>
+
+  <ul class="service-list">
+    <li>Google Play Services</li>
+    <li>Google AdMob</li>
+    <li>Google Analytics for Firebase</li>
+    <li>Firebase Crashlytics</li>
+    <li>RevenueCat</li>
+  </ul>
+
+  <p>
+    The specific services used may vary depending on the features
+    and version of the application.
+  </p>
+
+
+  <h2>Accessibility Service</h2>
+
+  <p>
+    Some features of Emoji Battery Icon: Status Bar may require
+    Android Accessibility Service permission.
+  </p>
+
+  <p>
+    Accessibility Service may be used to enable visual personalization
+    features such as status bar decorations, notch effects, screen pets,
+    charging effects, or other supported screen overlays.
+  </p>
+
+  <p>
+    The Accessibility Service is used only to provide the features
+    that require it. The application does not use Accessibility Service
+    to read passwords, financial information, private messages, or
+    other sensitive personal content.
+  </p>
+
+  <p>
+    Accessibility Service permission can be disabled at any time through
+    your device settings. Disabling this permission may prevent certain
+    personalization features from working.
+  </p>
+
+  <div class="highlight">
+    ✨ Accessibility permission is used to provide specific
+    personalization and visual overlay features. It is not intended
+    to collect or monitor your private content.
+  </div>
+
+
+  <h2>Screen Overlays and Display Features</h2>
+
+  <p>
+    The application may display visual elements over other applications
+    or on parts of the Android interface when you enable supported
+    personalization features.
+  </p>
+
+  <p>
+    These features may include:
+  </p>
+
+  <ul>
+    <li>Emoji battery indicators</li>
+    <li>Status bar decorations</li>
+    <li>Notch overlays</li>
+    <li>Screen pets</li>
+    <li>Charging effects</li>
+    <li>Other decorative screen elements</li>
+  </ul>
+
+  <p>
+    These visual elements are intended to customize the appearance
+    of your device. The availability and behavior of these features
+    may vary depending on your Android version and device manufacturer.
+  </p>
+
+
+  <h2>Device Information</h2>
+
+  <p>
+    When you use the Service, certain technical information about your
+    device may be collected automatically through the application or
+    third-party services.
+  </p>
+
+  <p>
+    This information may include device model, operating system version,
+    application version, language or locale, device configuration,
+    timestamps, and other technical information required to provide
+    or troubleshoot the Service.
+  </p>
+
+
+  <h2>Log Data</h2>
+
+  <p>
+    Diagnostic and technical information may be collected when you use
+    the Service, particularly when an error or crash occurs.
+  </p>
+
+  <p>
+    Log Data may include information such as device IP address,
+    device model, operating system version, application version,
+    app configuration, timestamps, crash information, and other
+    diagnostic statistics.
+  </p>
+
+
+  <h2>Cookies and Similar Technologies</h2>
+
+  <p>
+    Emoji Battery Icon: Status Bar does not directly use cookies
+    within the application.
+  </p>
+
+  <p>
+    However, third-party services integrated into the application may
+    use device identifiers, SDKs, cookies, or similar technologies
+    to provide analytics, advertising, security, crash reporting,
+    purchase management, or other services.
+  </p>
+
+
+  <h2>Advertising</h2>
+
+  <p>
+    Emoji Battery Icon: Status Bar may display advertisements through
+    third-party advertising providers such as Google AdMob.
+  </p>
+
+  <p>
+    Advertising providers may collect or use certain information,
+    such as advertising identifiers, device information, approximate
+    location, app usage information, or other information permitted
+    by applicable platform settings and privacy controls.
+  </p>
+
+  <p>
+    You may be able to manage advertising preferences through your
+    Android device or Google account settings.
+  </p>
+
+
+  <h2>Analytics</h2>
+
+  <p>
+    Emoji Battery Icon: Status Bar may use analytics services such as
+    Google Analytics for Firebase to understand how users interact
+    with the application and to improve its performance, reliability,
+    and features.
+  </p>
+
+  <p>
+    Analytics information may include app usage events, device
+    information, application version, session information, and
+    general technical statistics.
+  </p>
+
+
+  <h2>Crash Reporting</h2>
+
+  <p>
+    Firebase Crashlytics may be used to identify, investigate, and
+    resolve application crashes and technical problems.
+  </p>
+
+  <p>
+    Crash reports may contain technical information about your device,
+    operating system, application version, and the circumstances
+    surrounding an application crash.
+  </p>
+
+
+  <h2>Service Providers</h2>
+
+  <p>
+    Third-party companies and individuals may be employed to help
+    provide, maintain, analyze, and improve the Service.
+  </p>
+
+  <p>
+    These providers may assist with:
+  </p>
+
+  <ul>
+    <li>Application functionality</li>
+    <li>Screen personalization features</li>
+    <li>Analytics and performance monitoring</li>
+    <li>Advertising</li>
+    <li>Crash reporting and diagnostics</li>
+    <li>Subscription and purchase management</li>
+  </ul>
+
+  <p>
+    These third parties may have access to limited information
+    necessary to perform their assigned tasks and are expected to
+    use such information only for the purposes for which it was provided.
+  </p>
+
+
+  <h2>In-App Purchases and Subscriptions</h2>
+
+  <h3>Payment</h3>
+
+  <ul>
+    <li>
+      Purchases made through the Android version of the application
+      are processed through Google Play.
+    </li>
+
+    <li>
+      Payments are charged to the user's Google Play account according
+      to the applicable Google Play terms.
+    </li>
+
+    <li>
+      Prices may vary by country, currency, taxes, promotions,
+      and other applicable factors.
+    </li>
+  </ul>
+
+
+  <h3>Subscriptions &amp; Renewals</h3>
+
+  <ul>
+    <li>
+      Subscription plans may automatically renew unless canceled
+      before the renewal date.
+    </li>
+
+    <li>
+      Subscriptions can be managed through the user's Google Play
+      account settings.
+    </li>
+  </ul>
+
+
+  <h3>Subscription Management</h3>
+
+  <p>
+    RevenueCat may be used to manage subscription status,
+    entitlement information, and purchase-related data for premium
+    features.
+  </p>
+
+
+  <h3>Refunds</h3>
+
+  <p>
+    Refund requests for purchases made through Google Play are subject
+    to Google Play policies and applicable laws.
+  </p>
+
+
+  <h3>Premium Features</h3>
+
+  <p>
+    Some advanced battery styles, widgets, status bar decorations,
+    screen pets, notch styles, charging effects, themes, or other
+    functionality may require a premium subscription or purchase.
+  </p>
+
+
+  <h2>Security</h2>
+
+  <p>
+    Reasonable commercial measures are used to protect information
+    handled by the Service.
+  </p>
+
+  <p>
+    However, no method of electronic transmission, processing,
+    or storage can be guaranteed to be completely secure.
+  </p>
+
+
+  <h2>Data Retention</h2>
+
+  <p>
+    Personalization settings and locally stored application data
+    may remain on your device under your control and may be deleted
+    by you through your device or the application, where applicable.
+  </p>
+
+  <p>
+    Information processed by third-party service providers may be
+    retained according to their respective privacy policies,
+    contractual obligations, and applicable laws.
+  </p>
+
+
+  <h2>Links to Other Sites</h2>
+
+  <p>
+    The Service may contain links to third-party websites or services.
+  </p>
+
+  <p>
+    We are not responsible for the content, privacy policies,
+    security, or practices of any third-party websites or services.
+  </p>
+
+
+  <h2>Children's Privacy</h2>
+
+  <p>
+    The Service is not directed to children under the age of 13.
+  </p>
+
+  <p>
+    We do not knowingly collect personally identifiable information
+    from children under 13 years of age.
+  </p>
+
+
+  <h2>Changes to This Privacy Policy</h2>
+
+  <p>
+    This Privacy Policy may be updated from time to time to reflect
+    changes to the Service, technology, legal requirements, or
+    business practices.
+  </p>
+
+  <p>
+    Users are encouraged to review this page periodically for any
+    changes. Updates become effective immediately after being posted.
+  </p>
+
+
+  <h2>Contact Us</h2>
+
+  <p>
+    If you have any questions, concerns, or suggestions regarding
+    this Privacy Policy, please contact us through the support
+    information provided on the application store listing.
+  </p>
+
+
+  <div class="footer">
+    © 2026
+    <span class="footer-brand">
+      Emoji Battery Icon: Status Bar
+    </span>.
+    All rights reserved.
+  </div>
+
+</article>
+
+
+  </main>
+
+</body>
+</html>
