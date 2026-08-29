@@ -1,1 +1,661 @@
-Terms
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#ff5fa4"/>
+
+  <title>Emoji Battery Icon: Status Bar - Terms & Conditions</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "DM Sans", Arial, sans-serif;
+      color: #29182c;
+      line-height: 1.75;
+      padding: 60px 20px;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255, 182, 216, .35), transparent 28%),
+        radial-gradient(circle at 90% 10%, rgba(196, 168, 255, .25), transparent 30%),
+        #fff8fc;
+    }
+
+    .container {
+      position: relative;
+      overflow: hidden;
+      max-width: 920px;
+      margin: auto;
+      padding: 60px 70px;
+      background: rgba(255, 255, 255, .96);
+      border: 1px solid #eee1eb;
+      border-radius: 32px;
+      box-shadow: 0 30px 80px rgba(80, 30, 70, .09);
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -140px;
+      top: -140px;
+      border-radius: 50%;
+      background: rgba(255, 79, 154, .08);
+    }
+
+    .container::after {
+      content: "✦";
+      position: absolute;
+      top: 45px;
+      right: 55px;
+      color: #ff82b5;
+      font-size: 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      background: #fff0f7;
+      border: 1px solid #ffd8e9;
+      color: #e84393;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .badge::before {
+      content: "✦";
+    }
+
+    h1 {
+      max-width: 700px;
+      margin-bottom: 12px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      background: linear-gradient(
+        90deg,
+        #ff3f91,
+        #a855f7,
+        #ff806d
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      color: #8a7889;
+      margin-bottom: 42px;
+      font-size: 14px;
+    }
+
+    .intro {
+      padding: 24px 26px;
+      margin-bottom: 40px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #fff3f8, #f8f1ff);
+      border: 1px solid #f3e4ef;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 42px;
+      margin-bottom: 15px;
+      color: #2d2031;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin-top: 27px;
+      margin-bottom: 10px;
+      color: #3b293e;
+      font-size: 17px;
+    }
+
+    p {
+      margin-bottom: 17px;
+      color: #665869;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 10px 0 22px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #665869;
+      font-size: 15px;
+    }
+
+    li::marker {
+      color: #e84393;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-list li {
+      margin: 0;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: #fff8fc;
+      border: 1px solid #f3e5ee;
+    }
+
+    .service-list li::before {
+      content: "✦";
+      margin-right: 8px;
+      color: #e84393;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      margin: 20px 0;
+      border-radius: 16px;
+      background: #fff7df;
+      border: 1px solid #f7e5ad;
+      color: #6d5a28;
+    }
+
+    .footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid #eee5ed;
+      color: #9b8c9d;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      color: #e84393;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .container {
+        padding: 35px 23px;
+        border-radius: 23px;
+      }
+
+      .container::after {
+        top: 30px;
+        right: 25px;
+      }
+
+      h1 {
+        padding-right: 25px;
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+
+<div class="badge">
+  Terms & Conditions
+</div>
+
+<h1>
+  Emoji Battery Icon: Status Bar
+</h1>
+
+<p class="subtitle">
+  Effective Date: August 29, 2026
+</p>
+
+
+<div class="intro">
+
+  <p>
+    By downloading, installing, accessing, or using Emoji Battery Icon:
+    Status Bar, you agree to be bound by these Terms & Conditions.
+    Please read these Terms carefully before using the application.
+  </p>
+
+  <p>
+    Emoji Battery Icon: Status Bar is a phone personalization
+    application that allows users to customize battery icons,
+    battery widgets, status bar decorations, notch styles, screen pets,
+    charging effects, and other visual elements on supported Android
+    devices.
+  </p>
+
+</div>
+
+
+<h2>Use of the Service</h2>
+
+<p>
+  You may use Emoji Battery Icon: Status Bar only for lawful purposes
+  and in accordance with these Terms & Conditions.
+</p>
+
+<p>
+  You agree not to use the application to:
+</p>
+
+<ul>
+  <li>Violate any applicable laws or regulations.</li>
+  <li>Infringe copyrights, trademarks, or other intellectual property rights.</li>
+  <li>Attempt to interfere with or disrupt the operation of the Service.</li>
+  <li>Use the application for fraudulent, abusive, or malicious purposes.</li>
+  <li>Attempt to bypass, disable, or interfere with application security or restrictions.</li>
+  <li>Distribute malware or other harmful software through or in connection with the Service.</li>
+</ul>
+
+
+<h2>Personalization Features</h2>
+
+<p>
+  Emoji Battery Icon: Status Bar provides visual personalization
+  features that may include emoji battery icons, battery widgets,
+  status bar decorations, notch styles, screen pets, charging effects,
+  and other decorative elements.
+</p>
+
+<p>
+  Features may vary depending on your Android version, device model,
+  manufacturer restrictions, system settings, and application version.
+</p>
+
+<p>
+  Some features may require additional Android permissions or system
+  settings to be enabled before they can function.
+</p>
+
+<div class="highlight">
+  ✨ The appearance and availability of personalization features may
+  vary between Android devices and operating system versions.
+</div>
+
+
+<h2>Accessibility Service</h2>
+
+<p>
+  Certain features may require Android Accessibility Service permission
+  to display visual elements or provide screen personalization
+  functionality.
+</p>
+
+<p>
+  Depending on your device and enabled features, Accessibility Service
+  may be used to support status bar decorations, screen pets, notch
+  effects, charging effects, or other supported visual overlays.
+</p>
+
+<p>
+  You are responsible for granting or disabling Accessibility Service
+  permission through your device settings.
+</p>
+
+<p>
+  If you disable the required permission, certain features may no
+  longer function as intended.
+</p>
+
+
+<h2>Screen Overlays</h2>
+
+<p>
+  Some personalization features may display visual elements over
+  other applications or parts of the Android system interface.
+</p>
+
+<p>
+  These overlays are designed for decorative and personalization
+  purposes and may include:
+</p>
+
+<ul>
+  <li>Emoji battery indicators</li>
+  <li>Status bar decorations</li>
+  <li>Notch overlays</li>
+  <li>Screen pets</li>
+  <li>Charging animations and effects</li>
+  <li>Other decorative screen elements</li>
+</ul>
+
+<p>
+  You should review the permissions requested by the application
+  before enabling these features.
+</p>
+
+
+<h2>User Responsibility</h2>
+
+<p>
+  You are responsible for using the application and its features
+  appropriately and in accordance with applicable laws and regulations.
+</p>
+
+<p>
+  You are also responsible for maintaining control over permissions
+  granted to the application and for reviewing system settings that
+  affect how screen overlays, Accessibility Service, widgets, and
+  other personalization features operate.
+</p>
+
+
+<h2>Subscriptions and Purchases</h2>
+
+<p>
+  Certain advanced battery styles, widgets, status bar decorations,
+  screen pets, notch styles, charging effects, themes, or other
+  functionality may require a paid subscription or one-time purchase.
+</p>
+
+
+<h3>Payment</h3>
+
+<ul>
+  <li>
+    Payments for Android purchases are processed through Google Play.
+  </li>
+
+  <li>
+    Applicable taxes may be added depending on your region.
+  </li>
+
+  <li>
+    Prices and available plans may vary by country, currency,
+    promotions, and applicable taxes.
+  </li>
+
+  <li>
+    Prices and subscription plans may change from time to time.
+  </li>
+</ul>
+
+
+<h3>Auto-Renewing Subscriptions</h3>
+
+<ul>
+  <li>
+    Subscriptions automatically renew unless canceled before the
+    applicable renewal date.
+  </li>
+
+  <li>
+    You can manage or cancel your subscription through your Google
+    Play account settings.
+  </li>
+
+  <li>
+    Renewal charges are billed through your Google Play account.
+  </li>
+</ul>
+
+
+<h3>Subscription Management</h3>
+
+<p>
+  RevenueCat may be used to manage subscription status, entitlement
+  information, and purchase-related data for premium features.
+</p>
+
+
+<h3>Refunds</h3>
+
+<p>
+  Refund requests for purchases made through Google Play are handled
+  according to Google Play policies and applicable laws.
+</p>
+
+
+<h2>Third-Party Services</h2>
+
+<p>
+  Emoji Battery Icon: Status Bar may integrate third-party services
+  to provide application functionality, analytics, advertising,
+  crash reporting, and subscription management.
+</p>
+
+<p>
+  These services may include:
+</p>
+
+<ul class="service-list">
+  <li>Google Play Services</li>
+  <li>Google AdMob</li>
+  <li>Google Analytics for Firebase</li>
+  <li>Firebase Crashlytics</li>
+  <li>RevenueCat</li>
+</ul>
+
+<p>
+  Third-party services may have their own terms, policies, and
+  conditions. Your use of those services may also be subject to
+  their respective terms.
+</p>
+
+
+<h2>Advertising</h2>
+
+<p>
+  Emoji Battery Icon: Status Bar may display advertisements through
+  third-party advertising providers.
+</p>
+
+<p>
+  Advertising availability, format, and frequency may vary depending
+  on your location, device, application version, settings, and other
+  factors.
+</p>
+
+
+<h2>Internet Access</h2>
+
+<p>
+  Certain features of Emoji Battery Icon: Status Bar may require an
+  active internet connection, including advertisements, analytics,
+  subscription verification, or other online functionality.
+</p>
+
+<p>
+  We are not responsible for service interruptions caused by network
+  issues, mobile carrier limitations, internet outages, or connectivity
+  problems beyond our reasonable control.
+</p>
+
+<p>
+  You are responsible for any mobile data or other connectivity
+  charges incurred while using the application.
+</p>
+
+
+<h2>Intellectual Property</h2>
+
+<p>
+  Emoji Battery Icon: Status Bar, including its software, user
+  interface, branding, logos, graphics, animations, designs,
+  templates, and other application materials, may be protected by
+  applicable intellectual property laws.
+</p>
+
+<p>
+  You may not copy, modify, reverse engineer, decompile, distribute,
+  sell, lease, sublicense, or create derivative works from the
+  application except where expressly permitted by applicable law.
+</p>
+
+<p>
+  All rights not expressly granted under these Terms are reserved.
+</p>
+
+
+<h2>Third-Party Content and Services</h2>
+
+<p>
+  The application may use or provide access to third-party content,
+  services, advertisements, websites, technologies, or other resources.
+</p>
+
+<p>
+  We do not control and are not responsible for the availability,
+  accuracy, content, policies, security, or practices of third-party
+  services.
+</p>
+
+
+<h2>Device Responsibility</h2>
+
+<p>
+  You are responsible for maintaining your device, operating system,
+  application permissions, and system settings required to use
+  the Service.
+</p>
+
+<p>
+  We are not responsible for issues caused by rooted devices,
+  modified operating systems, unsupported devices, unauthorized
+  modifications, manufacturer-specific restrictions, or environments
+  that do not meet the application's technical requirements.
+</p>
+
+<p>
+  Certain Android manufacturers may restrict background activity,
+  overlays, widgets, Accessibility Service, notifications, or other
+  functionality. Such restrictions may affect the operation of
+  certain features.
+</p>
+
+
+<h2>Disclaimer</h2>
+
+<p>
+  Emoji Battery Icon: Status Bar is provided on an "AS IS" and
+  "AS AVAILABLE" basis, to the maximum extent permitted by applicable
+  law.
+</p>
+
+<p>
+  We do not guarantee that the application will always be available,
+  uninterrupted, error-free, secure, or compatible with every Android
+  device or operating system.
+</p>
+
+<p>
+  Battery indicators, widgets, screen overlays, status bar
+  decorations, notch effects, screen pets, charging effects, and
+  other visual features may vary depending on the device, Android
+  version, manufacturer, system settings, and selected configuration.
+</p>
+
+
+<h2>Limitation of Liability</h2>
+
+<p>
+  To the maximum extent permitted by applicable law, we disclaim
+  warranties, express or implied, including warranties of
+  merchantability, fitness for a particular purpose, and
+  non-infringement.
+</p>
+
+<p>
+  We shall not be liable for indirect, incidental, special,
+  consequential, or punitive damages arising from or related to
+  your use of the application, except where such limitation is
+  prohibited by applicable law.
+</p>
+
+
+<h2>Termination</h2>
+
+<p>
+  We reserve the right to suspend or terminate access to the
+  application if you violate these Terms or use the Service in a
+  manner that may harm the application, other users, third parties,
+  or our services.
+</p>
+
+<p>
+  Upon termination, your right to use the application will
+  immediately cease.
+</p>
+
+
+<h2>Changes to These Terms</h2>
+
+<p>
+  These Terms & Conditions may be updated from time to time to
+  reflect changes to the application, features, services, legal
+  requirements, or business practices.
+</p>
+
+<p>
+  Updated versions will be posted on this page with a revised
+  effective date.
+</p>
+
+<p>
+  Continued use of Emoji Battery Icon: Status Bar after the updated
+  Terms become effective constitutes acceptance of the revised Terms.
+</p>
+
+
+<h2>Contact Us</h2>
+
+<p>
+  If you have any questions regarding these Terms & Conditions,
+  please contact us through the support information provided in
+  the application or on the relevant app store listing.
+</p>
+
+
+<div class="footer">
+  © 2026
+  <span class="footer-brand">
+    Emoji Battery Icon: Status Bar
+  </span>.
+  All rights reserved.
+</div>
+
+
+  </div>
+
+</body>
+</html>
