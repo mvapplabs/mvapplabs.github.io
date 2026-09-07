@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6eb4">
+  <meta name="description" content="Privacy Policy for ThemeMix: Wallpaper, Widget">
+  <title>ThemeMix: Wallpaper, Widget — Privacy Policy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+      color: #302035;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 8% 0%, rgba(255, 150, 205, .35), transparent 27%),
+        radial-gradient(circle at 92% 8%, rgba(143, 205, 255, .32), transparent 29%),
+        radial-gradient(circle at 85% 85%, rgba(190, 157, 255, .22), transparent 28%),
+        #fff8fc;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 55px 0;
+    }
+
+    .policy {
+      position: relative;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .95);
+      border: 1px solid rgba(239, 220, 234, .9);
+      border-radius: 32px;
+      padding: 60px 70px;
+      box-shadow: 0 30px 80px rgba(83, 39, 77, .10);
+    }
+
+    .policy::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -170px;
+      top: -170px;
+      border-radius: 50%;
+      background: rgba(255, 102, 176, .10);
+    }
+
+    .policy::after {
+      content: "✦";
+      position: absolute;
+      right: 55px;
+      top: 45px;
+      color: #ff8bc2;
+      font-size: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      color: #df428f;
+      background: #fff0f7;
+      border: 1px solid #ffd8e9;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      background: linear-gradient(90deg, #ff438f, #9c63ee, #42bde9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin: 14px 0 45px;
+      color: #8b788b;
+      font-size: 14px;
+    }
+
+    .intro {
+      padding: 24px 26px;
+      margin-bottom: 40px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #fff2f8, #f4f3ff, #effbff);
+      border: 1px solid #f0e3ef;
+    }
+
+    .intro p:last-child { margin-bottom: 0; }
+
+    h2 {
+      margin: 42px 0 15px;
+      color: #2d2031;
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      line-height: 1.25;
+      letter-spacing: -.5px;
+    }
+
+    h3 {
+      margin: 28px 0 10px;
+      color: #3c2b40;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 17px;
+      color: #66586a;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 10px 0 22px;
+      padding-left: 25px;
+      color: #66586a;
+    }
+
+    li {
+      margin: 7px 0;
+      font-size: 15px;
+    }
+
+    li::marker { color: #ed579c; }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      padding: 13px 16px;
+      margin: 0;
+      border-radius: 14px;
+      background: #fff8fc;
+      border: 1px solid #f2e4ee;
+    }
+
+    .service-list li::before {
+      content: "✦";
+      color: #ed579c;
+      margin-right: 8px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      margin: 20px 0;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #fff7df, #fff1f8);
+      border: 1px solid #f5e4b5;
+      color: #6d5a32;
+    }
+
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0 25px;
+    }
+
+    .privacy-card {
+      padding: 18px;
+      border-radius: 17px;
+      background: #faf7ff;
+      border: 1px solid #eee5f5;
+    }
+
+    .privacy-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #3e2d43;
+    }
+
+    .privacy-card span {
+      color: #756579;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid #eee5ed;
+      color: #9b8c9d;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      color: #e84393;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0;
+      }
+
+      .policy {
+        padding: 35px 23px;
+        border-radius: 23px;
+      }
+
+      .policy::after {
+        right: 25px;
+        top: 30px;
+      }
+
+      h1 {
+        font-size: 40px;
+        padding-right: 25px;
+      }
+
+      h2 { font-size: 24px; }
+
+      .service-list,
+      .privacy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main class="page">
+<article class="policy">
+
+  <div class="brand">✦ ThemeMix</div>
+
+  <h1>ThemeMix: Wallpaper, Widget</h1>
+
+  <p class="subtitle">
+    Privacy Policy · Effective Date: September 7, 2026
+  </p>
+
+  <div class="intro">
+    <p>
+      ThemeMix: Wallpaper, Widget ("ThemeMix", "we", "our", or "us") is a
+      phone customization application that helps users personalize their
+      devices with wallpapers, themes, custom app icons, widgets, and a
+      customizable Control Center.
+    </p>
+
+    <p>
+      This Privacy Policy explains how information may be handled when you
+      use ThemeMix. We aim to collect and use information only as needed
+      to provide, maintain, secure, and improve the features you choose to use.
+    </p>
+  </div>
+
+  <h2>1. Information We May Collect</h2>
+
+  <p>
+    Depending on the features you use and the permissions you grant,
+    ThemeMix may process certain information from your device.
+  </p>
+
+  <div class="privacy-grid">
+    <div class="privacy-card">
+      <strong>🖼️ Photos &amp; Media</strong>
+      <span>Images selected by you for wallpapers, customization, or other requested features.</span>
+    </div>
+
+    <div class="privacy-card">
+      <strong>📱 Device Information</strong>
+      <span>Basic technical information needed for compatibility, diagnostics, and app functionality.</span>
+    </div>
+
+    <div class="privacy-card">
+      <strong>⚙️ App Usage Information</strong>
+      <span>Information about interactions with features may be processed to improve the application.</span>
+    </div>
+
+    <div class="privacy-card">
+      <strong>🛡️ Accessibility Service</strong>
+      <span>Accessibility access may be used for Control Center and requested system-control features.</span>
+    </div>
+  </div>
+
+  <h2>2. Photos and Media Access</h2>
+
+  <p>
+    ThemeMix may request access to photos, images, or media stored on your
+    device when a feature requires it.
+  </p>
+
+  <p>
+    Images that you select are used to provide the feature you explicitly
+    request, such as selecting a wallpaper, customizing your home or lock
+    screen, or using an image in a supported customization workflow.
+  </p>
+
+  <p>
+    ThemeMix does not need access to every photo on your device simply for
+    you to browse or use the application's general customization features.
+    Where the operating system provides a more limited photo-selection
+    mechanism, ThemeMix may use the access granted through that mechanism.
+  </p>
+
+  <div class="highlight">
+    ✨ Images selected by you are used for the feature you choose to use.
+    ThemeMix does not sell your personal photos to third parties.
+  </div>
+
+  <h2>3. Wallpapers, Themes, Icons, and Widgets</h2>
+
+  <p>
+    ThemeMix provides wallpaper, theme, icon, and widget content for
+    personalizing your device. When you browse or save content, the
+    application may process information necessary to display, download,
+    save, or apply that content.
+  </p>
+
+  <p>
+    Favorite items or customization preferences may be stored locally on
+    your device or through services required to provide the relevant feature,
+    depending on the implementation of the application.
+  </p>
+
+  <h2>4. Accessibility Service</h2>
+
+  <p>
+    ThemeMix may use the Android Accessibility Service API to provide
+    specific user-requested features, including the customizable Control
+    Center and system controls.
+  </p>
+
+  <p>
+    Accessibility Service access may be used to:
+  </p>
+
+  <ul>
+    <li>Open the Control Center by swiping from the status bar</li>
+    <li>Control media playback</li>
+    <li>Increase or decrease device volume</li>
+    <li>Dismiss system dialogs when required by app features</li>
+  </ul>
+
+  <p>
+    Accessibility access is not used to read, collect, store, or share
+    personal or sensitive user information unrelated to the requested
+    functionality.
+  </p>
+
+  <div class="highlight">
+    🛡️ ThemeMix uses Accessibility Service access only to enable the
+    user-requested customization and system-control features described above.
+  </div>
+
+  <h2>5. Log Data and Diagnostics</h2>
+
+  <p>
+    If an error or crash occurs, ThemeMix or its integrated technical
+    services may process diagnostic information to identify and resolve
+    technical problems.
+  </p>
+
+  <p>
+    Depending on the services integrated into the application, diagnostic
+    information may include device model, operating system version,
+    application version, timestamps, crash information, app configuration,
+    and other technical statistics.
+  </p>
+
+  <h2>6. Analytics</h2>
+
+  <p>
+    ThemeMix may use analytics technologies to understand how users interact
+    with the application and to improve performance, stability, and features.
+  </p>
+
+  <p>
+    Analytics information may include feature usage events, session
+    information, application version, device information, and general
+    technical statistics.
+  </p>
+
+  <h2>7. Advertising</h2>
+
+  <p>
+    If advertising is enabled in ThemeMix, third-party advertising providers
+    may process certain information to display and measure advertisements.
+  </p>
+
+  <p>
+    Depending on the advertising provider and your device or account
+    settings, this may include advertising identifiers, device information,
+    approximate location, app usage information, and other information
+    permitted by applicable privacy controls.
+  </p>
+
+  <p>
+    You can manage certain advertising and privacy preferences through
+    your Android device and relevant account settings.
+  </p>
+
+  <h2>8. Third-Party Services</h2>
+
+  <p>
+    ThemeMix may rely on third-party providers to support application
+    functionality, hosting, content delivery, analytics, advertising,
+    crash reporting, security, or other technical services.
+  </p>
+
+  <p>
+    Such providers may process limited information necessary to perform
+    their assigned services. Their handling of information is governed by
+    their respective privacy policies and terms.
+  </p>
+
+  <p>
+    Examples of third-party services that may be used by ThemeMix include:
+  </p>
+
+  <ul class="service-list">
+    <li>Google Play Services</li>
+    <li>Analytics services</li>
+    <li>Crash reporting services</li>
+    <li>Advertising services</li>
+    <li>Cloud or content delivery services</li>
+  </ul>
+
+  <p>
+    The specific third-party services used may vary depending on the
+    application version and enabled features.
+  </p>
+
+  <h2>9. Cookies and Similar Technologies</h2>
+
+  <p>
+    ThemeMix does not directly use browser cookies as part of its core
+    Android application functionality.
+  </p>
+
+  <p>
+    However, third-party SDKs or services integrated into the application
+    may use device identifiers, SDK technologies, cookies, or similar
+    technologies where applicable for analytics, advertising, security,
+    crash reporting, or service delivery.
+  </p>
+
+  <h2>10. Data Sharing</h2>
+
+  <p>
+    ThemeMix does not sell your personal information or personal photos.
+  </p>
+
+  <p>
+    Information may be shared with service providers only when reasonably
+    necessary to provide application functionality, maintain the service,
+    analyze performance, display advertisements where applicable, prevent
+    abuse, or comply with legal obligations.
+  </p>
+
+  <h2>11. Data Retention</h2>
+
+  <p>
+    Information handled by ThemeMix is retained only for as long as
+    reasonably necessary for the purposes described in this Privacy Policy,
+    unless a longer retention period is required by law.
+  </p>
+
+  <p>
+    Wallpapers, favorites, preferences, and other content stored locally
+    on your device remain under your control and may be removed by you
+    through the application or your device, where applicable.
+  </p>
+
+  <h2>12. Data Security</h2>
+
+  <p>
+    We use reasonable technical and organizational measures intended to
+    protect information handled by the application and its service
+    providers.
+  </p>
+
+  <p>
+    However, no method of electronic transmission, processing, or storage
+    can be guaranteed to be completely secure.
+  </p>
+
+  <h2>13. Children's Privacy</h2>
+
+  <p>
+    ThemeMix is not directed to children under the age of 13, and we do not
+    knowingly collect personally identifiable information from children
+    under 13.
+  </p>
+
+  <p>
+    If you believe that a child has provided personal information to us,
+    please contact us so that appropriate action can be taken.
+  </p>
+
+  <h2>14. Your Choices</h2>
+
+  <ul>
+    <li>You can choose whether to grant photo and media permissions.</li>
+    <li>You can revoke permissions through Android device settings.</li>
+    <li>You can disable Accessibility Service access through Android settings.</li>
+    <li>You can stop using features that require optional permissions.</li>
+    <li>You can manage certain advertising and privacy preferences through your device or account settings.</li>
+  </ul>
+
+  <h2>15. Links to Other Services</h2>
+
+  <p>
+    ThemeMix may contain or display content from, or links to, third-party
+    websites or services.
+  </p>
+
+  <p>
+    We are not responsible for the content, privacy practices, security,
+    or policies of third-party websites or services. We recommend reviewing
+    their privacy policies before using them.
+  </p>
+
+  <h2>16. Changes to This Privacy Policy</h2>
+
+  <p>
+    We may update this Privacy Policy from time to time to reflect changes
+    to ThemeMix, technology, legal requirements, or business practices.
+  </p>
+
+  <p>
+    When changes are made, the updated policy will be posted on this page
+    with a revised effective date. Your continued use of ThemeMix after an
+    update means that you acknowledge the updated policy.
+  </p>
+
+  <h2>17. Contact Us</h2>
+
+  <p>
+    If you have questions, concerns, or requests regarding this Privacy
+    Policy or ThemeMix's privacy practices, please contact us at:
+  </p>
+
+  <p>
+    <strong>Email:</strong> glamsie1984@googlemail.com
+  </p>
+
+  <div class="footer">
+    © 2026 <span class="footer-brand">ThemeMix: Wallpaper, Widget</span>.
+    All rights reserved.
+  </div>
+
+</article>
+</main>
+</body>
+</html>
