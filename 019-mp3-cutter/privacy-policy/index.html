@@ -1,1 +1,781 @@
-privacy-policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff6b00">
+
+  <title>MP3 Cutter & Music Editor - Privacy Policy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: #202020;
+      line-height: 1.75;
+      background:
+        radial-gradient(
+          circle at 10% 0%,
+          rgba(255, 107, 0, .10),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(255, 157, 92, .10),
+          transparent 30%
+        ),
+        #fffaf6;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    .policy {
+      position: relative;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .96);
+      border: 1px solid rgba(238, 224, 214, .9);
+      border-radius: 30px;
+      padding: 60px 70px;
+      box-shadow: 0 30px 80px rgba(70, 35, 10, .08);
+    }
+
+    .policy::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      right: -150px;
+      top: -150px;
+      border-radius: 50%;
+      background: rgba(255, 107, 0, .07);
+    }
+
+    .policy::after {
+      content: "♫";
+      position: absolute;
+      right: 58px;
+      top: 42px;
+      color: #ff9b5c;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      color: #e95f00;
+      background: #fff1e7;
+      border: 1px solid #ffd8be;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      background: linear-gradient(
+        90deg,
+        #f35b00,
+        #ff8a3d,
+        #e95700
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      margin: 14px 0 45px;
+      color: #8b7d75;
+      font-size: 14px;
+    }
+
+    .intro {
+      position: relative;
+      padding: 24px 26px;
+      margin-bottom: 40px;
+      border-radius: 20px;
+      background: linear-gradient(
+        135deg,
+        #fff5ed,
+        #fffaf6
+      );
+      border: 1px solid #f4e2d4;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 42px 0 15px;
+      color: #252525;
+      font-size: 27px;
+      line-height: 1.25;
+      letter-spacing: -.6px;
+    }
+
+    h3 {
+      margin: 28px 0 10px;
+      color: #35302c;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 17px;
+      color: #665e59;
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 10px 0 22px;
+      padding-left: 25px;
+      color: #665e59;
+    }
+
+    li {
+      margin: 7px 0;
+      font-size: 15px;
+    }
+
+    li::marker {
+      color: #ff6b00;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      padding: 13px 16px;
+      margin: 0;
+      border-radius: 14px;
+      background: #fffaf6;
+      border: 1px solid #f1e3d8;
+    }
+
+    .service-list li::before {
+      content: "•";
+      color: #ff6b00;
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      margin: 20px 0;
+      border-radius: 16px;
+      background: #fff5e9;
+      border: 1px solid #f5d9bd;
+      color: #6c4c32;
+    }
+
+    .highlight strong {
+      color: #e85d00;
+    }
+
+    .footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid #eee4dd;
+      color: #9a8d85;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      color: #e95f00;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0;
+      }
+
+      .policy {
+        padding: 35px 23px;
+        border-radius: 23px;
+      }
+
+      .policy::after {
+        right: 25px;
+        top: 30px;
+      }
+
+      h1 {
+        font-size: 40px;
+        padding-right: 25px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="page">
+
+  <article class="policy">
+
+    <div class="brand">
+      ♫ MP3 Cutter & Music Editor
+    </div>
+
+    <h1>
+      Privacy Policy
+    </h1>
+
+    <p class="subtitle">
+      Effective Date: September 8, 2026
+    </p>
+
+
+    <div class="intro">
+
+      <p>
+        MP3 Cutter & Music Editor is an audio editing application that
+        allows users to cut, trim, merge, mix, split, convert, compress,
+        reverse, and customize audio files. The application may also
+        provide features such as ringtone creation, video-to-audio
+        conversion, volume adjustment, speed control, and audio metadata
+        editing.
+      </p>
+
+      <p>
+        This Privacy Policy explains how information may be collected,
+        used, processed, and protected when you use the application.
+        By using the Service, you agree to the practices described in
+        this Privacy Policy.
+      </p>
+
+    </div>
+
+
+    <h2>Information Collection and Use</h2>
+
+    <p>
+      We aim to collect only the information reasonably necessary to
+      provide, maintain, secure, and improve the application.
+    </p>
+
+    <p>
+      The application primarily works with audio, video, and media files
+      selected by you from your device. These files are used to perform
+      the editing or conversion operation that you request.
+    </p>
+
+    <p>
+      Depending on the features and version of the application,
+      third-party services may collect limited technical, usage,
+      advertising, crash, or purchase-related information.
+    </p>
+
+    <p>
+      These services may include:
+    </p>
+
+    <ul class="service-list">
+      <li>Google Play Services</li>
+      <li>Google AdMob</li>
+      <li>Google Analytics for Firebase</li>
+      <li>Firebase Crashlytics</li>
+      <li>RevenueCat</li>
+    </ul>
+
+    <p>
+      The specific third-party services used may vary depending on
+      the application version, available features, region, and
+      configuration.
+    </p>
+
+
+    <h2>Audio and Media Files</h2>
+
+    <p>
+      MP3 Cutter & Music Editor may request access to audio, video,
+      and other media files on your device so that you can select
+      files for editing or conversion.
+    </p>
+
+    <p>
+      Files that you select may be used for features including:
+    </p>
+
+    <ul>
+      <li>Audio trimming and cutting</li>
+      <li>Audio splitting</li>
+      <li>Audio merging</li>
+      <li>Audio mixing</li>
+      <li>Audio reversing</li>
+      <li>Volume adjustment and volume boosting</li>
+      <li>Audio speed adjustment</li>
+      <li>Muting selected portions of audio</li>
+      <li>Audio compression</li>
+      <li>Ringtone creation</li>
+      <li>Video-to-audio conversion</li>
+      <li>Audio format conversion</li>
+      <li>Audio metadata and tag editing</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Important:</strong>
+      Your selected audio and video files are used to perform the
+      editing or conversion operations that you request. We do not
+      sell your personal audio, video, or media files to third parties.
+    </div>
+
+
+    <h2>Local Processing</h2>
+
+    <p>
+      Many audio editing operations are designed to be performed
+      locally on your Android device.
+    </p>
+
+    <p>
+      When an operation is performed locally, the selected media file
+      does not need to be uploaded to our servers for that operation.
+    </p>
+
+    <p>
+      The availability of local processing may depend on the specific
+      feature, application version, device capabilities, and technical
+      implementation.
+    </p>
+
+
+    <h2>File Access Permissions</h2>
+
+    <p>
+      The application may request Android media or storage permissions
+      when necessary to allow you to select, read, edit, save, or export
+      audio and video files.
+    </p>
+
+    <p>
+      Permissions are used only for functionality that requires access
+      to media files on your device.
+    </p>
+
+    <p>
+      You can manage application permissions through the Android device
+      settings. Disabling a required permission may prevent certain
+      editing, importing, or exporting features from working correctly.
+    </p>
+
+
+    <h2>Generated and Exported Files</h2>
+
+    <p>
+      When you save an edited or converted file, the resulting file may
+      be stored in a location selected or determined by the application
+      and Android system.
+    </p>
+
+    <p>
+      Saved files remain on your device unless you choose to share,
+      upload, or otherwise transfer them using another application
+      or service.
+    </p>
+
+    <p>
+      You are responsible for managing and deleting exported files
+      from your device when they are no longer needed.
+    </p>
+
+
+    <h2>Video-to-Audio Conversion</h2>
+
+    <p>
+      The application may allow you to extract audio from compatible
+      video files.
+    </p>
+
+    <p>
+      When you select a video for this feature, the application may
+      access the selected video file and process its audio track to
+      generate an audio file.
+    </p>
+
+    <p>
+      The original video remains under your control and is not sold
+      or licensed by us.
+    </p>
+
+
+    <h2>Log Data</h2>
+
+    <p>
+      When you use the Service, certain technical and diagnostic
+      information may be collected automatically, particularly when
+      an error or crash occurs.
+    </p>
+
+    <p>
+      Log Data may include information such as:
+    </p>
+
+    <ul>
+      <li>Device model</li>
+      <li>Android operating system version</li>
+      <li>Application version</li>
+      <li>Device configuration</li>
+      <li>Application timestamps</li>
+      <li>Crash information</li>
+      <li>Diagnostic information</li>
+      <li>General performance information</li>
+    </ul>
+
+
+    <h2>Analytics</h2>
+
+    <p>
+      We may use Google Analytics for Firebase to understand how users
+      interact with the application and to improve its functionality,
+      stability, and user experience.
+    </p>
+
+    <p>
+      Analytics data may include application events, session information,
+      device information, application version, and general usage
+      statistics.
+    </p>
+
+    <p>
+      Analytics data is intended to provide aggregated or technical
+      insights into application usage rather than the content of your
+      personal audio files.
+    </p>
+
+
+    <h2>Crash Reporting</h2>
+
+    <p>
+      Firebase Crashlytics may be used to detect, investigate, and
+      resolve crashes and technical problems.
+    </p>
+
+    <p>
+      Crash reports may contain information such as device model,
+      operating system version, application version, stack traces,
+      timestamps, and other technical information related to an
+      application failure.
+    </p>
+
+
+    <h2>Advertising</h2>
+
+    <p>
+      The application may display advertisements provided by
+      third-party advertising providers, including Google AdMob.
+    </p>
+
+    <p>
+      Advertising providers may collect or use certain information,
+      such as advertising identifiers, device information, approximate
+      location, application usage information, and other information
+      permitted by applicable platform settings and privacy controls.
+    </p>
+
+    <p>
+      Advertising personalization and related settings may be managed
+      through your Android device or Google account settings, where
+      available.
+    </p>
+
+
+    <h2>Third-Party Service Providers</h2>
+
+    <p>
+      We may work with third-party companies and service providers
+      that help us operate, maintain, analyze, monetize, or improve
+      the application.
+    </p>
+
+    <p>
+      These providers may assist with:
+    </p>
+
+    <ul>
+      <li>Application services and infrastructure</li>
+      <li>Analytics</li>
+      <li>Advertising</li>
+      <li>Crash reporting</li>
+      <li>Performance monitoring</li>
+      <li>Subscription management</li>
+      <li>Payment-related information processing</li>
+    </ul>
+
+    <p>
+      Third-party providers may have access to limited information
+      necessary to perform their services and are expected to process
+      such information according to their applicable privacy policies
+      and contractual obligations.
+    </p>
+
+
+    <h2>In-App Purchases and Subscriptions</h2>
+
+    <h3>Google Play Purchases</h3>
+
+    <p>
+      If the application offers paid features or subscriptions,
+      purchases made through the Android version are processed through
+      Google Play.
+    </p>
+
+    <p>
+      We do not directly receive or store your complete payment card
+      information through the application.
+    </p>
+
+    <h3>Subscription Management</h3>
+
+    <p>
+      RevenueCat may be used to manage subscription status, entitlements,
+      purchase information, and access to premium features.
+    </p>
+
+    <p>
+      Information processed by RevenueCat may include information
+      associated with purchases and subscription status, such as
+      product identifiers, transaction information, entitlement
+      status, and related technical information.
+    </p>
+
+    <h3>Subscription Renewals</h3>
+
+    <p>
+      Subscription plans may automatically renew according to the
+      applicable Google Play subscription terms unless canceled before
+      the renewal date.
+    </p>
+
+    <p>
+      You can manage or cancel subscriptions through your Google Play
+      account settings.
+    </p>
+
+    <h3>Refunds</h3>
+
+    <p>
+      Refunds for purchases made through Google Play are subject to
+      Google Play policies and applicable laws.
+    </p>
+
+
+    <h2>How We Use Information</h2>
+
+    <p>
+      Information handled by the Service may be used for purposes such as:
+    </p>
+
+    <ul>
+      <li>Providing audio editing functionality</li>
+      <li>Processing files selected by the user</li>
+      <li>Saving and exporting edited files</li>
+      <li>Providing premium features</li>
+      <li>Managing subscriptions and entitlements</li>
+      <li>Improving application performance</li>
+      <li>Understanding application usage</li>
+      <li>Detecting and fixing crashes</li>
+      <li>Preventing abuse and maintaining security</li>
+      <li>Displaying advertisements</li>
+      <li>Complying with applicable legal requirements</li>
+    </ul>
+
+
+    <h2>Data Sharing</h2>
+
+    <p>
+      We do not sell your personal information or personal audio,
+      video, or music files to third parties.
+    </p>
+
+    <p>
+      Information may be shared with service providers when reasonably
+      necessary to provide application functionality, analytics,
+      advertising, crash reporting, subscription management, security,
+      or other services described in this Privacy Policy.
+    </p>
+
+    <p>
+      Information may also be disclosed when required by applicable
+      law, legal process, governmental request, or to protect the
+      rights, safety, and security of the Service, its users, or others.
+    </p>
+
+
+    <h2>Data Retention</h2>
+
+    <p>
+      Audio and video files that you select or create are generally
+      stored locally on your device according to the behavior of the
+      application and Android system.
+    </p>
+
+    <p>
+      We do not claim ownership of your music, audio recordings,
+      videos, or edited files.
+    </p>
+
+    <p>
+      Information processed by third-party services may be retained
+      according to the respective provider's privacy policy,
+      retention practices, contractual obligations, and applicable laws.
+    </p>
+
+
+    <h2>Security</h2>
+
+    <p>
+      Reasonable technical and organizational measures may be used
+      to protect information handled by the Service.
+    </p>
+
+    <p>
+      However, no method of electronic transmission, processing,
+      or storage can be guaranteed to be completely secure.
+    </p>
+
+
+    <h2>Your Choices</h2>
+
+    <p>
+      You may control certain aspects of your information and the
+      application's access to your device through Android settings.
+    </p>
+
+    <ul>
+      <li>
+        You can grant or revoke media permissions through Android settings.
+      </li>
+      <li>
+        You can delete audio and video files stored on your device.
+      </li>
+      <li>
+        You can manage advertising preferences through available
+        Android or Google settings.
+      </li>
+      <li>
+        You can manage subscriptions through Google Play.
+      </li>
+      <li>
+        You can uninstall the application to stop its access to
+        your device, subject to information already processed by
+        third-party services.
+      </li>
+    </ul>
+
+
+    <h2>Children's Privacy</h2>
+
+    <p>
+      The Service is not directed to children under the age of 13.
+    </p>
+
+    <p>
+      We do not knowingly collect personally identifiable information
+      from children under 13 years of age.
+    </p>
+
+
+    <h2>Links to Other Services</h2>
+
+    <p>
+      The application or its associated website may contain links to
+      third-party websites or services.
+    </p>
+
+    <p>
+      We are not responsible for the privacy practices, security,
+      content, or policies of third-party websites or services.
+    </p>
+
+    <p>
+      We encourage you to review the privacy policies of any
+      third-party service you choose to use.
+    </p>
+
+
+    <h2>Changes to This Privacy Policy</h2>
+
+    <p>
+      We may update this Privacy Policy from time to time to reflect
+      changes to the application, technology, legal requirements,
+      third-party services, or business practices.
+    </p>
+
+    <p>
+      When changes are made, the updated Privacy Policy will be
+      published on this page and the effective date will be updated
+      accordingly.
+    </p>
+
+    <p>
+      We encourage you to review this Privacy Policy periodically
+      for any changes.
+    </p>
+
+
+    <h2>Contact Us</h2>
+
+    <p>
+      If you have questions, concerns, or suggestions regarding
+      this Privacy Policy or the privacy practices of the application,
+      please contact us through the support information provided
+      on the application's Google Play listing.
+    </p>
+
+
+    <div class="footer">
+      © 2026
+      <span class="footer-brand">
+        MP3 Cutter & Music Editor
+      </span>.
+      All rights reserved.
+    </div>
+
+  </article>
+</main>
+</body>
+</html>
