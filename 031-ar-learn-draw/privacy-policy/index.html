@@ -1,1 +1,563 @@
-policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#168FF5">
+  <title>Privacy Policy - Easy Draw: Learn to Draw</title>
+
+  <style>
+    :root {
+      --blue: #168FF5;
+      --blue-dark: #0878D8;
+      --pink: #F65387;
+      --yellow: #FFD52E;
+      --orange: #FF9D22;
+      --green: #48C85A;
+      --purple: #9A5DEB;
+      --text: #26354A;
+      --muted: #65748A;
+      --bg: #F5FBFF;
+      --card: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, #DFF3FF 0, transparent 25%),
+        radial-gradient(circle at 90% 20%, #FFF2C7 0, transparent 25%),
+        radial-gradient(circle at 50% 100%, #FFE8F0 0, transparent 30%),
+        var(--bg);
+      line-height: 1.75;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 75px 20px 110px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(135deg,
+        #0878D8 0%,
+        #168FF5 48%,
+        #45C8F7 100%);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,.16);
+    }
+
+    .hero::before {
+      width: 190px;
+      height: 190px;
+      left: -75px;
+      top: -75px;
+    }
+
+    .hero::after {
+      width: 260px;
+      height: 260px;
+      right: -100px;
+      bottom: -145px;
+    }
+
+    .hero-icon {
+      position: relative;
+      z-index: 1;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 28px;
+      background: #fff;
+      font-size: 48px;
+      box-shadow: 0 12px 30px rgba(0,70,130,.2);
+      transform: rotate(-3deg);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      font-size: 43px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 12px auto 0;
+      font-size: 17px;
+      opacity: .96;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: -55px auto 60px;
+      padding: 0 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid rgba(22,143,245,.12);
+      border-radius: 30px;
+      padding: 46px;
+      box-shadow: 0 20px 60px rgba(20,100,150,.12);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      color: #0878D8;
+      background: #EAF7FF;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 40px 0 13px;
+      font-size: 24px;
+      line-height: 1.3;
+      color: #20364F;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    h2::before {
+      content: "✦";
+      display: inline-block;
+      margin-right: 9px;
+      color: var(--pink);
+    }
+
+    p { margin: 10px 0; }
+
+    ul { padding-left: 24px; }
+
+    li { margin: 8px 0; }
+
+    a {
+      color: #0878D8;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .intro {
+      font-size: 17px;
+      color: #526176;
+    }
+
+    .info-card {
+      margin: 22px 0;
+      padding: 22px 24px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #EAF7FF, #FFF0F5);
+      border: 1px solid #DCECF7;
+    }
+
+    .info-card strong { color: #0878D8; }
+
+    .service {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 17px;
+      margin: 10px 0;
+      border-radius: 16px;
+      background: #F8FBFD;
+    }
+
+    .service-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 13px;
+      background: #fff;
+      font-size: 21px;
+      box-shadow: 0 4px 12px rgba(20,80,120,.08);
+    }
+
+    .highlight {
+      padding: 24px;
+      margin: 22px 0;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #FFF9D9, #EAF7FF);
+      border-left: 5px solid var(--yellow);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 0 20px 45px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer .icons {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 650px) {
+      .hero { padding: 55px 20px 90px; }
+
+      .hero h1 { font-size: 34px; }
+
+      .content {
+        padding: 30px 22px;
+        border-radius: 24px;
+      }
+
+      h2 { font-size: 21px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-icon">🎨</div>
+    <h1>Easy Draw: Learn to Draw</h1>
+    <p>
+      A simple, playful, and creative drawing experience for little artists ✨
+    </p>
+  </section>
+
+  <main class="container">
+    <article class="content">
+
+      <div class="badge">
+        🔒 Privacy Policy · Updated September 16, 2026
+      </div>
+
+      <p class="intro">
+        Welcome to <strong>Easy Draw: Learn to Draw</strong>!
+        We created this app to help children discover the joy of drawing
+        through simple step-by-step lessons, cute coloring pages, and
+        creative drawing activities.
+      </p>
+
+      <p>
+        We respect your privacy and want to keep things simple.
+        This Privacy Policy explains what information may be handled
+        when you use the app and how that information is used.
+      </p>
+
+      <h2>What Information We Collect</h2>
+
+      <p>
+        Easy Draw: Learn to Draw is primarily a drawing and coloring
+        application. Most of the app's core features can be used without
+        creating an account or submitting personal information directly to us.
+      </p>
+
+      <div class="info-card">
+        <strong>🎨 In short:</strong><br>
+        We do not ask users to create an account, and we do not require
+        a child's name, phone number, or personal profile information
+        to use the drawing, coloring, and creative features.
+      </div>
+
+      <p>
+        Depending on the features you use and the services integrated
+        into the app, certain technical or usage information may be
+        processed automatically by third-party service providers.
+      </p>
+
+      <h2>Device & Usage Information</h2>
+
+      <p>
+        To help the app work properly and to understand how people
+        interact with it, certain technical information may be processed.
+      </p>
+
+      <p>This may include:</p>
+
+      <ul>
+        <li>Device model and manufacturer</li>
+        <li>Operating system and app version</li>
+        <li>Approximate technical information about your device</li>
+        <li>IP address or similar network information</li>
+        <li>App interaction and usage information</li>
+        <li>Crash and diagnostic information</li>
+      </ul>
+
+      <p>
+        This information may be used to maintain stability, diagnose
+        crashes, improve performance, and understand general app usage.
+      </p>
+
+      <h2>Drawings, Coloring Pages & Artwork</h2>
+
+      <p>
+        Easy Draw allows users to create drawings, color artwork,
+        add text or images, and save creative work.
+      </p>
+
+      <div class="highlight">
+        <strong>🖌️ Your creativity stays yours.</strong><br>
+        Artwork created in the app is used to provide the drawing and
+        editing features you choose to use. We do not use children's
+        artwork to build a personal profile or sell their creations.
+      </div>
+
+      <p>
+        Saved artwork may remain on the device according to the app's
+        storage behavior and the permissions or storage mechanisms
+        available on the device.
+      </p>
+
+      <h2>Photos & Images</h2>
+
+      <p>
+        Easy Draw may need access to photos or device media when you
+        choose features that involve adding an image to artwork or
+        otherwise selecting media from the device.
+      </p>
+
+      <p>
+        Access to photos or media is used only when required for an
+        action that you initiate. The app does not require access to
+        your personal photos for its basic drawing and coloring features.
+      </p>
+
+      <h2>Advertising</h2>
+
+      <p>
+        To support the development and maintenance of Easy Draw,
+        the app may display advertisements provided by third-party
+        advertising partners.
+      </p>
+
+      <div class="service">
+        <div class="service-icon">📢</div>
+        <div>
+          <strong>Google AdMob</strong><br>
+          <span>
+            Advertising delivery, measurement, and related services.
+          </span>
+        </div>
+      </div>
+
+      <p>
+        Advertising providers may process information such as device
+        information, advertising identifiers, IP address, approximate
+        location, and interaction with advertisements. The exact
+        information processed depends on your device settings,
+        applicable laws, and the provider's configuration.
+      </p>
+
+      <p>
+        You can learn more about Google's privacy practices here:
+        <a href="https://policies.google.com/privacy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Google Privacy & Terms
+        </a>.
+      </p>
+
+      <h2>Analytics & App Performance</h2>
+
+      <p>
+        We may use analytics and diagnostic services to understand
+        general usage patterns and improve Easy Draw.
+      </p>
+
+      <div class="service">
+        <div class="service-icon">📊</div>
+        <div>
+          <strong>Firebase Analytics</strong><br>
+          <span>
+            Helps us understand general app usage and improve features.
+          </span>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🛠️</div>
+        <div>
+          <strong>Crash & Diagnostic Services</strong><br>
+          <span>
+            Helps identify crashes and technical problems.
+          </span>
+        </div>
+      </div>
+
+      <p>
+        These services may automatically receive technical information
+        from your device when you use the application.
+      </p>
+
+      <p>
+        More information about Firebase's privacy practices is available at
+        <a href="https://firebase.google.com/support/privacy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Firebase Privacy
+        </a>.
+      </p>
+
+      <h2>Third-Party Services</h2>
+
+      <p>
+        Easy Draw may rely on third-party technologies to provide
+        advertising, analytics, crash reporting, or other supporting
+        functionality.
+      </p>
+
+      <p>
+        These providers may process information according to their own
+        privacy policies. We recommend reviewing their policies to
+        understand how they handle information.
+      </p>
+
+      <ul>
+        <li>
+          <a href="https://policies.google.com/privacy"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="https://support.google.com/admob/answer/6128543"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google AdMob Privacy Information
+          </a>
+        </li>
+        <li>
+          <a href="https://firebase.google.com/support/privacy"
+             target="_blank"
+             rel="noopener noreferrer">
+            Firebase Privacy Information
+          </a>
+        </li>
+      </ul>
+
+      <h2>Cookies & Similar Technologies</h2>
+
+      <p>
+        Easy Draw itself does not operate a traditional website-cookie
+        system inside the mobile application.
+      </p>
+
+      <p>
+        However, third-party SDKs used for advertising, analytics,
+        measurement, or other functionality may use identifiers and
+        technologies that work in a similar way to cookies.
+      </p>
+
+      <h2>How We Use Information</h2>
+
+      <p>
+        Information processed through the app and its supporting
+        services may be used to:
+      </p>
+
+      <ul>
+        <li>Provide and maintain the drawing and coloring experience;</li>
+        <li>Provide drawing lessons and creative activities;</li>
+        <li>Save and reopen artwork when requested;</li>
+        <li>Display and measure advertisements;</li>
+        <li>Understand general app usage;</li>
+        <li>Detect crashes and technical problems;</li>
+        <li>Improve app performance and features;</li>
+        <li>Protect the app against abuse or misuse.</li>
+      </ul>
+
+      <h2>Data Security</h2>
+
+      <p>
+        We take reasonable measures to protect information processed
+        in connection with our Services.
+      </p>
+
+      <p>
+        Nevertheless, no electronic storage system or Internet
+        transmission can be guaranteed to be completely secure.
+        Therefore, absolute security cannot be guaranteed.
+      </p>
+
+      <h2>Children's Privacy</h2>
+
+      <p>
+        Easy Draw: Learn to Draw is designed to provide a simple,
+        child-friendly drawing and coloring experience. We do not
+        knowingly request children to provide personal information
+        such as their name, phone number, or personal profile information
+        in order to use the core features of the app.
+      </p>
+
+      <p>
+        Where third-party services are used, their handling of information
+        is governed by their own policies and applicable requirements.
+        Parents or guardians should review those policies where appropriate.
+      </p>
+
+      <p>
+        If we become aware that personal information from a child has
+        been collected through our Services in circumstances where such
+        collection is not permitted, we will take reasonable steps to
+        address and delete it where applicable.
+      </p>
+
+      <h2>External Links</h2>
+
+      <p>
+        The app or related content may occasionally contain links to
+        external websites or services. Those websites are operated by
+        third parties and have their own privacy practices.
+      </p>
+
+      <p>
+        We encourage parents, guardians, and users to review the privacy
+        policies of any external service they choose to visit.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+
+      <p>
+        We may occasionally update this Privacy Policy to reflect
+        changes to the application, third-party services, or applicable
+        requirements.
+      </p>
+
+      <p>
+        When changes are made, the updated version will be published
+        on this page together with a new effective date.
+      </p>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="icons">✏️ 🎨 🌈 ⭐</div>
+    Easy Draw: Learn to Draw · Learn. Color. Create.
+  </footer>
+
+</body>
+</html>
